@@ -4,6 +4,8 @@ An agent skill for creating editable photo collages, posters, roll-up banners, a
 
 Choose a design goal and platform, provide the copy, and optionally suggest a palette. The agent searches for real images, develops the collage and colors, arranges editable text in the selected platform, and responds to later revision requests.
 
+When running in Codex with built-in image tools available, the skill can also use the host's image generation and editing models for collage visuals, paper textures, concept backgrounds, and targeted revisions. It follows the available `imagegen` skill and current tool schema rather than requiring a fixed model version. The built-in route needs no separate API key.
+
 The skill instructions are in Chinese. The agent can follow the language of your request.
 
 ## Install with npm / npx
@@ -67,7 +69,7 @@ All example copy is placeholder text.
 2. Choose Canva or Figma, freeze that route, and check the connector. A tool failure does not authorize switching platforms.
 3. Organize the supplied copy into heading levels, body text, calls to action, and supporting information.
 4. Use the optional palette or derive one from the subject and selected photographs.
-5. Search for real images using generic subject terms, inspect their sources and usage terms, and prepare the collage assets.
+5. Search for real images using generic subject terms, inspect their sources and usage terms, and prepare the collage assets. In Codex, use available image generation or editing tools where appropriate to the task; respect real-photo-only and pixel-preservation requirements, and label generated material accurately.
 6. Compose the design in the selected platform, preserve editable text, inspect the preview, and verify saving.
 7. Deliver the preview and editable link, plus requested exports. On later feedback, reread the current design and preserve manual edits.
 
