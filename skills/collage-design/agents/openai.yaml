@@ -1,0 +1,6 @@
+interface:
+  display_name: "Collage Design"
+  short_description: "Create editable photo collages in Canva or Figma"
+  default_prompt: "Use $collage-design to turn my design goal and copy into an editable photo collage."
+policy:
+  allow_implicit_invocation: true
