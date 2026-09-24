@@ -2,7 +2,7 @@
 
 执行前加载当前 `figma-use` 指南；创建文件、构建完整页面时，再按工具要求加载相应技能。使用当前环境的实际 schema，不把普通 Plugin API 的全部能力当作远程 connector 均支持。
 
-进入条件：用户已选择 Figma，任务中的 `platform` 为 `figma` 且 `platform_locked` 为 true。本分支接收 Codex 独立检索、整理和制作的素材，不依赖 Figma 的图库或搜图接口。首稿、保存与后续返修都留在 Figma；操作受限时在 Figma 内人工接力，不调用 Canva 代做。
+适用于 `platform: figma`、`platform_locked: true` 的任务。接收独立准备的素材，在 Figma 内完成制作、保存和返修。
 
 ## 连接、文件与素材
 

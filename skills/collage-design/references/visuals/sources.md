@@ -1,6 +1,6 @@
 # Reference images and sources
 
-Images use neutral filenames. Source files have been reduced for reference viewing and stripped of identifying file metadata. The three suppressed portraits and original text-bearing final exports are not included.
+Images use neutral filenames and have been reduced for reference viewing, with identifying file metadata removed. Unredacted originals are excluded.
 
 ## Real-photo inputs
 
@@ -26,15 +26,15 @@ Images use neutral filenames. Source files have been reduced for reference viewi
 
 | ID | Role | Kind | Reference image |
 | --- | --- | --- | --- |
-| RA | 42 layered environment fragments | assembled image | [View](rollup/stages/ambient-collage.jpg) |
+| RA | layered environment fragments | assembled image | [View](rollup/stages/ambient-collage.jpg) |
 | RB | ambient collage with paper panels | assembled image | [View](rollup/stages/paper-background.jpg) |
 | RF1 | original-color foreground cutout | prepared image | [View](rollup/stages/foreground-01.png) |
 | RF2 | original-color foreground cutout | prepared image | [View](rollup/stages/foreground-02.png) |
 | RD | redacted final roll-up study | imagegen redaction derivative | [View](rollup/final-redacted.png) |
-| PC | generated concept background before subject replacement | generated concept image | [View](poster/sources/concept-background.png) |
-| PS | character artwork used for subject replacement | third-party artwork | [View](poster/sources/character.png) |
+| PC | concept background | generated concept image | [View](poster/sources/concept-background.png) |
+| PS | character artwork | third-party artwork | [View](poster/sources/character.png) |
 | PF | prepared character cutout | prepared image | [View](poster/stages/character-cutout.png) |
-| PB | shared background after subject replacement | assembled image | [View](poster/stages/assembled-background.png) |
+| PB | shared background | assembled image | [View](poster/stages/assembled-background.png) |
 | PD1 | redacted final poster A study | imagegen redaction derivative | [View](poster/final-a-redacted.png) |
 | PD2 | redacted final poster B study | imagegen redaction derivative | [View](poster/final-b-redacted.png) |
 
@@ -42,8 +42,6 @@ The character artwork source recorded in the production chain is [this image](ht
 
 ## Reading the links
 
-[lineage.json](lineage.json) maps source IDs to intermediate composites and redacted final studies. Links describe material inheritance; the final studies include later manual layout adjustments and are not pixel-exact source masters.
-
-The two final poster studies share a background and layout family. The second inherits the approved first-page layout, not the redacted bitmap.
+[lineage.json](lineage.json) maps source IDs to intermediate composites and redacted final studies. Links describe material and layout inheritance, not exact reconstruction steps. The two posters share a background and layout family.
 
 Reference visuals have separate rights from the instruction text; see [NOTICE](NOTICE.md).

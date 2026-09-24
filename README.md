@@ -36,9 +36,9 @@ Installing this skill installs instructions only. It does not install connectors
 
 ## Visual references
 
-The skill includes a redacted roll-up banner, two redacted social posters, and the images used in their production chain. Text is replaced with solid bars; the banner's central portraits and QR code are hidden. The original portrait files and unredacted final exports are excluded.
+The skill includes redacted roll-up and poster studies with their source and intermediate images. Text and private identifiers are masked; unredacted originals are excluded.
 
-The examples explain how to select real material, combine monochrome environment fragments with color imagery, and choose a small number of foreground subjects. They distinguish real photographs from generated concept imagery and show how a manually refined layout carries over to another page.
+The examples illustrate real-image selection, monochrome/color hierarchy, foreground subjects, and material relationships. Generated concept imagery is identified separately.
 
 ![Roll-up source-to-layout study](skills/collage-design/references/visuals/rollup/flow.png)
 
@@ -48,20 +48,7 @@ Read the [visual examples](skills/collage-design/references/visual-examples.md),
 
 ## Usage
 
-```text
-Use $collage-design to create a portrait event poster in Canva.
-Size: 30 × 40 cm.
-Copy: [main heading], [supporting heading], [event details], [call to action].
-Palette: choose colors from the selected photographs.
-```
-
-```text
-用 $collage-design 在 Figma 制作一张 3:4 的社媒图片。
-文本材料：[一级标题]、[二级标题]、[正文]、[行动指引]。
-配色：可选；未指定时根据内容与真实图片确定。
-```
-
-All example copy is placeholder text.
+Invoke `$collage-design` with the output format, Canva or Figma, and the text to include. Add dimensions, a palette, or an existing design when relevant.
 
 ## Workflow
 
@@ -77,7 +64,7 @@ Canva uses available creation or import tools followed by editing. Figma uses up
 
 ## Privacy and task files
 
-The distributed skill contains reusable instructions and explicitly approved visual references. Final studies have their copy and private identifiers removed; the three central portrait images are suppressed and their source files are not distributed. Real project briefs, original poster copy, account credentials, and private design links are excluded.
+The package contains reusable instructions and redacted visual references. Real project briefs, conversations, generation prompts, personal preferences, credentials, and private design links belong in private task records.
 
 Store real task briefs, source lists, design identifiers, previews, exports, and handoff records in a separate private project directory. Do not save them back into this package. Use generic search terms instead of confidential wording, and do not publish private assets to make them importable.
 
