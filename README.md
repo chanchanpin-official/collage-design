@@ -1,5 +1,7 @@
 # Collage Design
 
+English | [简体中文](README.zh-CN.md)
+
 An agent skill for creating editable photo collages, posters, roll-up banners, and social media graphics in **Canva or Figma**.
 
 Choose a design goal and platform, provide the copy, and optionally suggest a palette. The agent searches for real images, develops the collage and colors, arranges editable text in the selected platform, and responds to later revision requests.
