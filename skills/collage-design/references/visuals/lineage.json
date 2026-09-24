@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "purpose": "Visual study references; do not treat redaction bars as publishable copy.",
+  "notes": [
+    "The references describe a documented production lineage, including later manual layout adjustments.",
+    "Final studies are redacted derivatives of exported final designs, not pixel-exact masters.",
+    "Upstream images are reduced reference copies with identifying file metadata removed.",
+    "Real photographs, generated concept imagery and third-party artwork are explicitly distinguished.",
+    "Private original briefs, copy, names, contact details, file paths, account IDs, design links and QR payloads are omitted.",
+    "Three central portraits are solid placeholders in the final study; their source photographs are not distributed."
+  ],
+  "nodes": [
+    {
+      "id": "R01",
+      "file": "rollup/sources/photo-01.jpg",
+      "role": "basketball",
+      "kind": "real photograph",
+      "author": "Monstera Production",
+      "url": "https://www.pexels.com/photo/concentrated-men-playing-basketball-on-court-5384570/"
+    },
+    {
+      "id": "R02",
+      "file": "rollup/sources/photo-02.jpg",
+      "role": "badminton",
+      "kind": "real photograph",
+      "author": "Luthfi Ali Qodri",
+      "url": "https://www.pexels.com/photo/an-active-man-playing-badminton-8774467/"
+    },
+    {
+      "id": "R03",
+      "file": "rollup/sources/photo-03.jpg",
+      "role": "tennis",
+      "kind": "real photograph",
+      "author": "Alejandra D",
+      "url": "https://www.pexels.com/photo/a-tennis-player-serving-the-ball-10521362/"
+    },
+    {
+      "id": "R04",
+      "file": "rollup/sources/photo-04.jpg",
+      "role": "court aerial",
+      "kind": "real photograph",
+      "author": "RDNE Stock project",
+      "url": "https://www.pexels.com/photo/aerial-view-of-basketball-courts-8783116/"
+    },
+    {
+      "id": "R05",
+      "file": "rollup/sources/photo-05.jpg",
+      "role": "court geometry",
+      "kind": "real photograph",
+      "author": "Kindel Media",
+      "url": "https://www.pexels.com/photo/aerial-photography-of-basketball-court-9716286/"
+    },
+    {
+      "id": "R06",
+      "file": "rollup/sources/photo-06.jpg",
+      "role": "court people",
+      "kind": "real photograph",
+      "author": "Djordje Petrovic",
+      "url": "https://www.pexels.com/photo/top-view-photo-of-people-playing-basketball-2538027/"
+    },
+    {
+      "id": "R07",
+      "file": "rollup/sources/photo-07.jpg",
+      "role": "tennis gear",
+      "kind": "real photograph",
+      "author": "meartkey",
+      "url": "https://www.pexels.com/photo/tennis-racket-and-tennis-balls-on-tennis-court-11149460/"
+    },
+    {
+      "id": "R08",
+      "file": "rollup/sources/photo-08.jpg",
+      "role": "badminton gear",
+      "kind": "real photograph",
+      "author": "Fatma Kılıç",
+      "url": "https://www.pexels.com/photo/badminton-racquets-and-shuttlecock-on-grass-32874231/"
+    },
+    {
+      "id": "R09",
+      "file": "rollup/sources/photo-09.jpg",
+      "role": "tennis ball",
+      "kind": "real photograph",
+      "author": "ROMAN ODINTSOV",
+      "url": "https://www.pexels.com/photo/tennis-ball-in-mid-air-8542685/"
+    },
+    {
+      "id": "R10",
+      "file": "rollup/sources/photo-10.jpg",
+      "role": "camera",
+      "kind": "real photograph",
+      "author": "Luis Quintero",
+      "url": "https://www.pexels.com/photo/photo-of-camera-and-tripod-3892900/"
+    },
+    {
+      "id": "R11",
+      "file": "rollup/sources/photo-11.jpg",
+      "role": "phone",
+      "kind": "real photograph",
+      "author": "Soundarapandian MS",
+      "url": "https://www.pexels.com/photo/close-up-of-a-smartphone-in-hand-17467828/"
+    },
+    {
+      "id": "R12",
+      "file": "rollup/sources/photo-12.jpg",
+      "role": "phone screen",
+      "kind": "real photograph",
+      "author": "Expect Best",
+      "url": "https://www.pexels.com/photo/close-up-of-hand-holding-smart-phone-246684/"
+    },
+    {
+      "id": "R13",
+      "file": "rollup/sources/photo-13.jpg",
+      "role": "friends",
+      "kind": "real photograph",
+      "author": "Matheus Bertelli",
+      "url": "https://www.pexels.com/photo/group-of-friends-with-smartphones-15141225/"
+    },
+    {
+      "id": "R14",
+      "file": "rollup/sources/photo-14.jpg",
+      "role": "social",
+      "kind": "real photograph",
+      "author": "Keira Burton",
+      "url": "https://www.pexels.com/photo/happy-multiethnic-friends-with-smartphones-on-street-6146947/"
+    },
+    {
+      "id": "R15",
+      "file": "rollup/sources/photo-15.jpg",
+      "role": "badminton close",
+      "kind": "real photograph",
+      "author": "Lê Đức",
+      "url": "https://www.pexels.com/photo/14885978/"
+    },
+    {
+      "id": "RA",
+      "file": "rollup/stages/ambient-collage.jpg",
+      "role": "42 layered environment fragments",
+      "kind": "assembled image"
+    },
+    {
+      "id": "RB",
+      "file": "rollup/stages/paper-background.jpg",
+      "role": "ambient collage with paper panels",
+      "kind": "assembled image"
+    },
+    {
+      "id": "RF1",
+      "file": "rollup/stages/foreground-01.png",
+      "role": "original-color foreground cutout",
+      "kind": "prepared image"
+    },
+    {
+      "id": "RF2",
+      "file": "rollup/stages/foreground-02.png",
+      "role": "original-color foreground cutout",
+      "kind": "prepared image"
+    },
+    {
+      "id": "RD",
+      "file": "rollup/final-redacted.png",
+      "role": "redacted final roll-up study",
+      "kind": "imagegen redaction derivative"
+    },
+    {
+      "id": "PC",
+      "file": "poster/sources/concept-background.png",
+      "role": "generated concept background before subject replacement",
+      "kind": "generated concept image"
+    },
+    {
+      "id": "PS",
+      "file": "poster/sources/character.png",
+      "role": "character artwork used for subject replacement",
+      "kind": "third-party artwork",
+      "url": "https://www.pngkit.com/png/detail/160-1609565_imgenes-de-wall-e-con-fondo-transparente-descarga.png"
+    },
+    {
+      "id": "PF",
+      "file": "poster/stages/character-cutout.png",
+      "role": "prepared character cutout",
+      "kind": "prepared image"
+    },
+    {
+      "id": "PB",
+      "file": "poster/stages/assembled-background.png",
+      "role": "shared background after subject replacement",
+      "kind": "assembled image"
+    },
+    {
+      "id": "PD1",
+      "file": "poster/final-a-redacted.png",
+      "role": "redacted final poster A study",
+      "kind": "imagegen redaction derivative"
+    },
+    {
+      "id": "PD2",
+      "file": "poster/final-b-redacted.png",
+      "role": "redacted final poster B study",
+      "kind": "imagegen redaction derivative"
+    }
+  ],
+  "edges": [
+    {
+      "from": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "to": "RA",
+      "operation": "42 crops, repeats, grayscale and warm duotone; scene horizons remain level"
+    },
+    {
+      "from": [
+        "RA"
+      ],
+      "to": "RB",
+      "operation": "add torn paper panels and section color blocks"
+    },
+    {
+      "from": [
+        "R02"
+      ],
+      "to": "RF1",
+      "operation": "isolate subject; retain color; add paper edge"
+    },
+    {
+      "from": [
+        "R03"
+      ],
+      "to": "RF2",
+      "operation": "isolate subject; retain color; add paper edge"
+    },
+    {
+      "from": [
+        "RB",
+        "RF1",
+        "RF2"
+      ],
+      "to": "RD",
+      "operation": "combine imagery with native editable text, apply final manual layout, then redact copy, QR and three central portraits for this study; original portrait sources are excluded"
+    },
+    {
+      "from": [
+        "PS"
+      ],
+      "to": "PF",
+      "operation": "prepare character cutout"
+    },
+    {
+      "from": [
+        "PC",
+        "PF"
+      ],
+      "to": "PB",
+      "operation": "replace upper-right subject; preserve shared paper panels and background"
+    },
+    {
+      "from": [
+        "PB"
+      ],
+      "to": "PD1",
+      "operation": "add native editable typography, apply manual layout, then redact copy for this study"
+    },
+    {
+      "from": [
+        "PB",
+        "PD1"
+      ],
+      "to": "PD2",
+      "operation": "inherit the approved page layout, replace copy, then redact; PD1 represents that layout, not an actual source bitmap"
+    }
+  ],
+  "rollup_ambient_fragments": [
+    {
+      "source_id": "R05",
+      "bounds_cm": [
+        -7.0,
+        -4.5,
+        49.5,
+        36.0
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.24
+    },
+    {
+      "source_id": "R10",
+      "bounds_cm": [
+        48.5,
+        -8.0,
+        37.0,
+        42.5
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.18
+    },
+    {
+      "source_id": "R04",
+      "bounds_cm": [
+        18.5,
+        21.5,
+        42.0,
+        30.0
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.28
+    },
+    {
+      "source_id": "R03",
+      "bounds_cm": [
+        -5.5,
+        32.0,
+        33.0,
+        41.0
+      ],
+      "crop_normalized": [
+        0,
+        0.22,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.22
+    },
+    {
+      "source_id": "R13",
+      "bounds_cm": [
+        42.0,
+        36.0,
+        41.0,
+        28.5
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.3
+    },
+    {
+      "source_id": "R15",
+      "bounds_cm": [
+        18.0,
+        45.0,
+        32.5,
+        26.5
+      ],
+      "crop_normalized": [
+        0.1,
+        0.02,
+        0.97,
+        0.92
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.24
+    },
+    {
+      "source_id": "R14",
+      "bounds_cm": [
+        -3.0,
+        65.0,
+        43.0,
+        34.0
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.26
+    },
+    {
+      "source_id": "R11",
+      "bounds_cm": [
+        51.6,
+        56.5,
+        33.0,
+        43.5
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.27
+    },
+    {
+      "source_id": "R06",
+      "bounds_cm": [
+        17.5,
+        84.0,
+        40.5,
+        30.0
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.25
+    },
+    {
+      "source_id": "R01",
+      "bounds_cm": [
+        -5.0,
+        91.2,
+        34.0,
+        49.5
+      ],
+      "crop_normalized": [
+        0.06,
+        0.15,
+        0.94,
+        0.99
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.3
+    },
+    {
+      "source_id": "R10",
+      "bounds_cm": [
+        45.2,
+        96.5,
+        39.0,
+        33.0
+      ],
+      "crop_normalized": [
+        0.1,
+        0.18,
+        0.96,
+        0.88
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.24
+    },
+    {
+      "source_id": "R09",
+      "bounds_cm": [
+        16.0,
+        115.0,
+        46.0,
+        26.5
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.28
+    },
+    {
+      "source_id": "R02",
+      "bounds_cm": [
+        51.0,
+        122.5,
+        36.5,
+        48.0
+      ],
+      "crop_normalized": [
+        0.06,
+        0.1,
+        0.96,
+        0.96
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.25
+    },
+    {
+      "source_id": "R07",
+      "bounds_cm": [
+        -4.5,
+        138.0,
+        38.0,
+        40.0
+      ],
+      "crop_normalized": [
+        0,
+        0.08,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.34
+    },
+    {
+      "source_id": "R05",
+      "bounds_cm": [
+        18.0,
+        151.0,
+        47.0,
+        31.0
+      ],
+      "crop_normalized": [
+        0.05,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.35
+    },
+    {
+      "source_id": "R13",
+      "bounds_cm": [
+        45.5,
+        164.0,
+        39.0,
+        32.0
+      ],
+      "crop_normalized": [
+        0.1,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.35
+    },
+    {
+      "source_id": "R04",
+      "bounds_cm": [
+        -6.5,
+        177.0,
+        54.0,
+        35.0
+      ],
+      "crop_normalized": [
+        0,
+        0.15,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.42
+    },
+    {
+      "source_id": "R03",
+      "bounds_cm": [
+        36.0,
+        179.0,
+        50.0,
+        30.0
+      ],
+      "crop_normalized": [
+        0,
+        0.4,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.35
+    },
+    {
+      "source_id": "R07",
+      "bounds_cm": [
+        33.0,
+        3.0,
+        23.5,
+        15.0
+      ],
+      "crop_normalized": [
+        0.02,
+        0.44,
+        1,
+        0.94
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.16
+    },
+    {
+      "source_id": "R08",
+      "bounds_cm": [
+        65.5,
+        15.0,
+        18.5,
+        21.0
+      ],
+      "crop_normalized": [
+        0.05,
+        0.05,
+        0.97,
+        0.75
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.23
+    },
+    {
+      "source_id": "R06",
+      "bounds_cm": [
+        -4.5,
+        19.5,
+        22.0,
+        20.5
+      ],
+      "crop_normalized": [
+        0.12,
+        0.3,
+        0.9,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.2
+    },
+    {
+      "source_id": "R12",
+      "bounds_cm": [
+        52.0,
+        31.0,
+        20.5,
+        17.5
+      ],
+      "crop_normalized": [
+        0.2,
+        0.16,
+        0.8,
+        0.86
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.18
+    },
+    {
+      "source_id": "R10",
+      "bounds_cm": [
+        23.5,
+        32.5,
+        14.5,
+        12.0
+      ],
+      "crop_normalized": [
+        0.0,
+        0.52,
+        0.75,
+        0.91
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.24
+    },
+    {
+      "source_id": "R05",
+      "bounds_cm": [
+        58.5,
+        46.0,
+        26.0,
+        12.5
+      ],
+      "crop_normalized": [
+        0.05,
+        0.3,
+        0.86,
+        0.75
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.27
+    },
+    {
+      "source_id": "R09",
+      "bounds_cm": [
+        -4.0,
+        53.5,
+        23.0,
+        15.0
+      ],
+      "crop_normalized": [
+        0.2,
+        0.18,
+        0.93,
+        0.88
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.23
+    },
+    {
+      "source_id": "R08",
+      "bounds_cm": [
+        32.0,
+        61.0,
+        21.0,
+        21.0
+      ],
+      "crop_normalized": [
+        0.1,
+        0.03,
+        0.97,
+        0.66
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.2
+    },
+    {
+      "source_id": "R14",
+      "bounds_cm": [
+        26.0,
+        75.7,
+        23.5,
+        16.5
+      ],
+      "crop_normalized": [
+        0.03,
+        0.03,
+        0.65,
+        0.73
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.3
+    },
+    {
+      "source_id": "R11",
+      "bounds_cm": [
+        57.0,
+        82.0,
+        19.5,
+        15.5
+      ],
+      "crop_normalized": [
+        0.1,
+        0.25,
+        0.84,
+        0.83
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.25
+    },
+    {
+      "source_id": "R03",
+      "bounds_cm": [
+        -3.5,
+        81.0,
+        24.0,
+        15.5
+      ],
+      "crop_normalized": [
+        0.05,
+        0.76,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.26
+    },
+    {
+      "source_id": "R04",
+      "bounds_cm": [
+        36.5,
+        94.8,
+        17.0,
+        12.0
+      ],
+      "crop_normalized": [
+        0.25,
+        0.1,
+        0.6,
+        0.95
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.25
+    },
+    {
+      "source_id": "R01",
+      "bounds_cm": [
+        63.0,
+        103.0,
+        19.5,
+        27.5
+      ],
+      "crop_normalized": [
+        0.13,
+        0.3,
+        0.92,
+        0.9
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.23
+    },
+    {
+      "source_id": "R15",
+      "bounds_cm": [
+        15.5,
+        107.0,
+        20.0,
+        16.0
+      ],
+      "crop_normalized": [
+        0.25,
+        0.25,
+        0.9,
+        0.82
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.26
+    },
+    {
+      "source_id": "R13",
+      "bounds_cm": [
+        36.0,
+        127.0,
+        24.5,
+        17.0
+      ],
+      "crop_normalized": [
+        0.07,
+        0.2,
+        0.9,
+        0.75
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.25
+    },
+    {
+      "source_id": "R10",
+      "bounds_cm": [
+        -2.5,
+        127.5,
+        24.5,
+        22.0
+      ],
+      "crop_normalized": [
+        0,
+        0.18,
+        0.78,
+        0.9
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.22
+    },
+    {
+      "source_id": "R08",
+      "bounds_cm": [
+        46.0,
+        143.5,
+        21.5,
+        20.0
+      ],
+      "crop_normalized": [
+        0.03,
+        0.03,
+        0.96,
+        0.9
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.38
+    },
+    {
+      "source_id": "R12",
+      "bounds_cm": [
+        65.5,
+        151.0,
+        17.0,
+        22.5
+      ],
+      "crop_normalized": [
+        0.1,
+        0.05,
+        0.9,
+        0.98
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.3
+    },
+    {
+      "source_id": "R06",
+      "bounds_cm": [
+        3.0,
+        153.0,
+        17.0,
+        17.0
+      ],
+      "crop_normalized": [
+        0,
+        0.12,
+        0.85,
+        0.86
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.35
+    },
+    {
+      "source_id": "R09",
+      "bounds_cm": [
+        15.0,
+        169.0,
+        23.5,
+        12.5
+      ],
+      "crop_normalized": [
+        0,
+        0.2,
+        1,
+        0.93
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.3
+    },
+    {
+      "source_id": "R15",
+      "bounds_cm": [
+        57.0,
+        183.5,
+        26.5,
+        19.0
+      ],
+      "crop_normalized": [
+        0.15,
+        0,
+        0.98,
+        0.98
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.37
+    },
+    {
+      "source_id": "R14",
+      "bounds_cm": [
+        26.5,
+        186.0,
+        28.5,
+        16.5
+      ],
+      "crop_normalized": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.33
+    },
+    {
+      "source_id": "R07",
+      "bounds_cm": [
+        -2.5,
+        190.5,
+        27.0,
+        15.0
+      ],
+      "crop_normalized": [
+        0,
+        0.4,
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.36
+    },
+    {
+      "source_id": "R05",
+      "bounds_cm": [
+        62.5,
+        193.5,
+        22.5,
+        12.0
+      ],
+      "crop_normalized": [
+        0,
+        0.2,
+        1,
+        0.95
+      ],
+      "rotation_degrees": 0,
+      "strength": 0.31
+    }
+  ]
+}

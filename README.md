@@ -32,6 +32,18 @@ npx skills add chanchanpin-official/collage-design --list
 
 Installing this skill installs instructions only. It does not install connectors, sign in to an account, grant permissions, or provide paid platform access. Connector features and approval rules depend on the current tool schema.
 
+## Visual references
+
+The skill includes a redacted roll-up banner, two redacted social posters, and the images used in their production chain. Text is replaced with solid bars; the banner's central portraits and QR code are hidden. The original portrait files and unredacted final exports are excluded.
+
+The examples explain how to select real material, combine monochrome environment fragments with color imagery, and choose a small number of foreground subjects. They distinguish real photographs from generated concept imagery and show how a manually refined layout carries over to another page.
+
+![Roll-up source-to-layout study](skills/collage-design/references/visuals/rollup/flow.png)
+
+![Poster source-to-layout study](skills/collage-design/references/visuals/poster/flow.png)
+
+Read the [visual examples](skills/collage-design/references/visual-examples.md), [selection and layering decisions](skills/collage-design/references/composition-decisions.md), and [image source index](skills/collage-design/references/visuals/sources.md). The redacted studies are visual references, not pixel-exact masters; their bars are not content to copy into a new deliverable.
+
 ## Usage
 
 ```text
@@ -63,7 +75,7 @@ Canva uses available creation or import tools followed by editing. Figma uses up
 
 ## Privacy and task files
 
-The distributed skill contains reusable instructions only. It includes no real project briefs, poster copy, photos, screenshots, account credentials, or private design links.
+The distributed skill contains reusable instructions and explicitly approved visual references. Final studies have their copy and private identifiers removed; the three central portrait images are suppressed and their source files are not distributed. Real project briefs, original poster copy, account credentials, and private design links are excluded.
 
 Store real task briefs, source lists, design identifiers, previews, exports, and handoff records in a separate private project directory. Do not save them back into this package. Use generic search terms instead of confidential wording, and do not publish private assets to make them importable.
 
@@ -74,7 +86,9 @@ Store real task briefs, source lists, design identifiers, previews, exports, and
 - [Canva workflow](skills/collage-design/references/canva.md)
 - [Figma workflow](skills/collage-design/references/figma.md)
 - [Assets and handoff](skills/collage-design/references/assets-and-handoff.md)
+- [Visual examples and material relationships](skills/collage-design/references/visual-examples.md)
+- [Real images, monochrome/color, and foreground selection](skills/collage-design/references/composition-decisions.md)
 
 ## License
 
-[MIT](LICENSE). The license covers this skill's instructions and metadata. Images or other assets selected during a task remain subject to their own terms.
+[MIT](LICENSE). The license covers this skill's instructions and metadata. Included reference visuals have a separate [notice](skills/collage-design/references/visuals/NOTICE.md); third-party photographs and artwork remain subject to their own terms. Images or other assets selected during a task also retain their own terms.
