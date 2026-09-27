@@ -4,7 +4,7 @@ English | [简体中文](README.zh-CN.md)
 
 An agent skill for creating editable photo collages, posters, roll-up banners, and social media graphics in **Canva or Figma**.
 
-Choose a design goal and platform, provide the copy, and optionally suggest a palette. The agent searches for real images, develops the collage and colors, arranges editable text in the selected platform, and responds to later revision requests.
+Choose a design goal and platform, provide the copy, and optionally suggest a palette. The agent first reports the official MCP connection and authorized account, then searches for real images, develops the collage and colors, arranges editable text, and responds to revision requests.
 
 When running in Codex with built-in image tools available, the skill can also use the host's image generation and editing models for collage visuals, paper textures, concept backgrounds, and targeted revisions. It follows the available `imagegen` skill and current tool schema rather than requiring a fixed model version. The built-in route needs no separate API key.
 
@@ -30,11 +30,21 @@ npx skills add chanchanpin-official/collage-design --list
 
 ## Requirements
 
-- A connected and authorized **Canva or Figma connector** with the capabilities needed to create and edit the target design. Only the selected platform is needed for a task.
+- A connected and authorized **official Canva or Figma MCP connector** with the capabilities needed to create and edit the target design. Only the selected platform is needed for a task.
 - Host-provided web and image search for sourcing real photographs independently of either platform's asset library.
 - A way to prepare and upload image assets supported by the host and chosen connector. Image operations must follow the host's tool instructions.
 
 Installing this skill installs instructions only. It does not install connectors, sign in to an account, grant permissions, or provide paid platform access. Connector features and approval rules depend on the current tool schema.
+
+## Required connection and account check
+
+Before sourcing, generating, uploading, or laying out assets, the agent must report the selected platform, MCP connection status, authorized account and evidence source, team/workspace, target, and read/write status. Figma uses `whoami`; if Canva exposes no account identity interface, the user must confirm the account authorized in the host's connector settings. A design owner or browser login is not proof of the MCP account.
+
+Unknown or mismatched accounts, failed authorization, and ambiguous target workspaces must be resolved before production. Where no suitable read-only connection check exists, an explicit user confirmation of the host's connection settings is recorded as user-confirmed, with API verification pending. A successful read does not prove write access. Clear results are reported without adding a redundant approval step.
+
+**Computer Use is off by default.** Creation, editing, uploads, previews, exports, and saving use the official MCP. Connection or capability failures do not trigger browser or desktop automation. A UI-only exception requires the user's explicit request and is limited to that step; user-led manual editing remains available. MCP previews and local image viewing remain part of visual checks. Only the selected platform is checked, and valid results are reused within the session.
+
+See [connection and account verification](skills/collage-design/references/connector-preflight.md) for the execution rules.
 
 ## Visual references
 
@@ -55,7 +65,7 @@ Invoke `$collage-design` with the output format, Canva or Figma, and the text to
 ## Workflow
 
 1. Define the output: format, size or publishing placement, number of pages, and purpose. Physical dimensions use cm; screen graphics use aspect ratios and pixels.
-2. Choose Canva or Figma, freeze that route, and check the connector. A tool failure does not authorize switching platforms.
+2. Choose Canva or Figma, freeze that route, and complete the required MCP connection and account report before production. A tool failure does not authorize switching platforms or starting Computer Use.
 3. Organize the supplied copy into heading levels, body text, calls to action, and supporting information.
 4. Use the optional palette or derive one from the subject and selected photographs.
 5. Search for real images using generic subject terms, inspect their sources and usage terms, and prepare the collage assets. In Codex, use available image generation or editing tools where appropriate to the task; respect real-photo-only and pixel-preservation requirements, and label generated material accurately.
@@ -74,6 +84,7 @@ Store real task briefs, source lists, design identifiers, previews, exports, and
 
 - [Skill instructions](skills/collage-design/SKILL.md)
 - [Design and editing defaults](skills/collage-design/references/preferences.md)
+- [Required connection and account verification](skills/collage-design/references/connector-preflight.md)
 - [Canva workflow](skills/collage-design/references/canva.md)
 - [Figma workflow](skills/collage-design/references/figma.md)
 - [Assets and handoff](skills/collage-design/references/assets-and-handoff.md)

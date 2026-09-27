@@ -4,7 +4,7 @@
 
 在 **Canva 或 Figma** 中制作可编辑的拼贴海报、易拉宝和社媒图片的 Agent Skill。
 
-确定设计目标和平台，提供文案，可选指定配色。Agent 会检索真实图片、制作拼贴主视觉、建立主题色，再在所选平台完成可编辑排版，并根据后续反馈返修。
+确定设计目标和平台，提供文案，可选指定配色。Agent 先同步官方 MCP 连接与授权账号，再检索真实图片、制作拼贴主视觉、建立主题色，在所选平台完成可编辑排版，并根据后续反馈返修。
 
 在 Codex 中运行时，还可使用当前内置的图像生成与编辑能力，制作主视觉、纸张纹理、概念背景或局部修改。调用遵循可用的 `imagegen` skill 和实际工具接口，不限定模型版本；内置路线无需另配 API key。
 
@@ -30,11 +30,21 @@ npx skills add chanchanpin-official/collage-design --list
 
 ## 使用条件
 
-- 已连接并授权 **Canva 或 Figma connector**，具备目标设计所需的创建和编辑能力。每次任务只需连接选中的平台。
+- 已连接并授权 **Canva 或 Figma 官方 MCP connector**，具备目标设计所需的创建和编辑能力。每次任务只需连接选中的平台。
 - 运行环境提供网页和图片搜索能力，搜图独立于设计平台自带图库。
 - 运行环境及所选 connector 支持素材处理与上传，图像操作遵循当前工具要求。
 
 安装 skill 只会安装操作指引，不会自动安装 connector、登录账号、授予权限或提供平台付费权益。具体功能及批准要求以当前工具接口为准。
+
+## 强制前置：连接与账号同步
+
+在搜图、生图、上传或排版前，Agent 必须同步所选平台、MCP 连接状态、授权账号及信息来源、团队／工作区、目标和读写状态。Figma 使用 `whoami`；Canva 若未提供账号查询接口，需由用户确认宿主连接设置中的授权账号。设计拥有者、浏览器登录账号不能代替 MCP 身份核验。
+
+账号未知或不匹配、授权失败、目标工作区未确定时，先解决缺项再制作。没有适合的只读连接检查时，可由用户明确确认宿主连接状态，并标记“用户确认、API 待验证”。读取成功不等于已验证写入权限；信息明确时同步后继续，无需额外重复批准。
+
+**Computer Use 默认关闭。** 创建、编辑、上传、预览、导出与保存使用官方 MCP；连接或功能异常不自动触发浏览器／桌面操作。仅在用户明确要求 Agent 操作界面时，才为对应步骤开放例外；用户仍可手动接续。MCP 返回的预览和本地图片查看继续用于视觉检查。只核验选中的平台，同一会话复用有效结果。
+
+具体执行规则见 [连接与账号核验](skills/collage-design/references/connector-preflight.md)。
 
 ## 视觉参考
 
@@ -55,7 +65,7 @@ npx skills add chanchanpin-official/collage-design --list
 ## 制作流程
 
 1. 确定输出目标：形式、尺寸或发布位置、页数及用途。实体尺寸统一用 cm，屏幕图片使用比例和像素。
-2. 选择 Canva 或 Figma，固定本次制作平台并检查 connector；工具故障不会自动触发换平台。
+2. 选择 Canva 或 Figma，固定本次制作平台，完成 MCP 连接与账号的前置信息同步；工具故障不会自动触发换平台或 Computer Use。
 3. 将文案整理为各级标题、正文、行动指引及辅助信息。
 4. 使用指定配色，或根据主题与照片建立色板。
 5. 用通用主题词检索真实图片，核对来源和使用范围，准备拼贴素材。在 Codex 中可按任务需要使用图像生成或编辑能力，尊重仅实拍、保留原像素等要求，并准确标注生成素材。
@@ -74,6 +84,7 @@ Canva 通过当前可用的创建或导入工具起稿，再进行精修；Figma
 
 - [Skill 主指引](skills/collage-design/SKILL.md)
 - [设计与编辑约定](skills/collage-design/references/preferences.md)
+- [强制前置：连接与账号核验](skills/collage-design/references/connector-preflight.md)
 - [Canva 流程](skills/collage-design/references/canva.md)
 - [Figma 流程](skills/collage-design/references/figma.md)
 - [素材与交接](skills/collage-design/references/assets-and-handoff.md)
