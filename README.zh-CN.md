@@ -34,7 +34,7 @@ npx skills add chanchanpin-official/collage-design --list
 - 运行环境提供网页和图片搜索能力，搜图独立于设计平台自带图库。
 - 运行环境及所选 connector 支持素材处理与上传，图像操作遵循当前工具要求。
 
-安装 skill 只会安装操作指引，不会自动安装 connector、登录账号、授予权限或提供平台付费权益。具体功能及批准要求以当前工具接口为准。
+安装 skill 会加入操作指引、参考素材和随包字体文件，不会自动安装 connector、登录账号、授予权限或提供平台付费权益。具体功能及批准要求以当前工具接口为准。
 
 ## 强制前置：连接与账号同步
 
@@ -45,6 +45,28 @@ npx skills add chanchanpin-official/collage-design --list
 **Computer Use 默认关闭。** 创建、编辑、上传、预览、导出与保存使用官方 MCP；连接或功能异常不自动触发浏览器／桌面操作。仅在用户明确要求 Agent 操作界面时，才为对应步骤开放例外；用户仍可手动接续。MCP 返回的预览和本地图片查看继续用于视觉检查。只核验选中的平台，同一会话复用有效结果。
 
 具体执行规则见 [连接与账号核验](skills/collage-design/references/connector-preflight.md)。
+
+## 默认字体包与官方许可证
+
+这个 GitHub 版本附带三款默认字体，以及各自原始的 **SIL Open Font License 1.1** 和版权声明：
+
+| 用途 | 字体 | 随包字体文件 | 官方许可证 |
+| --- | --- | --- | --- |
+| 中文标题、正文 | Noto Sans SC，字重 100–900 | [完整可变 WOFF2](skills/collage-design/assets/fonts/NotoSansSC-VF.woff2) | [OFL](skills/collage-design/assets/fonts/NotoSansSC-OFL.txt) |
+| 英文标签、数字 | Space Grotesk，字重 300–700 | [可变 TTF](skills/collage-design/assets/fonts/SpaceGrotesk-VF.ttf) | [OFL](skills/collage-design/assets/fonts/SpaceGrotesk-OFL.txt) |
+| 英文大标题 | Anton Regular | [TTF](skills/collage-design/assets/fonts/Anton-Regular.ttf) | [OFL](skills/collage-design/assets/fonts/Anton-OFL.txt) |
+
+三款字体均可按 OFL 条款用于商业项目。附带的是官方公开许可证，不是个人购买凭证。用户指定字体和已确认母版优先于这套默认组合。
+
+Noto Sans SC 采用 WOFF2 减少包体积，保留完整字符集和可变字重，未做字符子集化。HTML 可通过 [fonts.css](skills/collage-design/assets/fonts/fonts.css) 加载。需要可安装的 TTF 时，在具备 `fonttools[woff]` 的 Python 环境中，从仓库根目录运行：
+
+```sh
+python3 skills/collage-design/scripts/prepare_fonts.py --output-dir /tmp/collage-design-fonts
+```
+
+这个可选工具会将 Noto Sans SC 恢复为 TTF，并复制其余 TTF 和许可证，不会自动安装依赖或字体。字体随包提供不代表 Canva／Figma 已安装；排版前仍需核对所选平台实际可用的字体。
+
+详见[字体选择与使用说明](skills/collage-design/references/fonts.md)和[官方来源、固定版本与校验值](skills/collage-design/assets/fonts/sources.json)。
 
 ## 视觉参考
 
@@ -76,7 +98,7 @@ Canva 通过当前可用的创建或导入工具起稿，再进行精修；Figma
 
 ## 隐私与任务文件
 
-公开包只包含可复用指引与脱敏视觉参考。真实项目需求、对话、生成提示词、个人偏好、凭据和私有设计链接应保存在私有任务记录中。
+公开包包含可复用指引、脱敏视觉参考，以及注明来源的字体文件和许可证。真实项目需求、对话、生成提示词、个人偏好、凭据和私有设计链接应保存在私有任务记录中。
 
 将任务简报、素材清单、设计标识、预览、导出及交接文件保存在独立的私有项目目录，不回写到 skill 包。搜索时使用通用主题词，避免公开保密原文；上传素材时使用平台支持的私有上传方式。
 
@@ -88,9 +110,10 @@ Canva 通过当前可用的创建或导入工具起稿，再进行精修；Figma
 - [Canva 流程](skills/collage-design/references/canva.md)
 - [Figma 流程](skills/collage-design/references/figma.md)
 - [素材与交接](skills/collage-design/references/assets-and-handoff.md)
+- [默认字体与许可证](skills/collage-design/references/fonts.md)
 - [视觉示例与素材关系](skills/collage-design/references/visual-examples.md)
 - [真实素材、黑白／彩色与前景选择](skills/collage-design/references/composition-decisions.md)
 
 ## 许可
 
-[MIT](LICENSE) 适用于 skill 的指令和元数据。参考图片另有 [素材说明](skills/collage-design/references/visuals/NOTICE.md)，第三方照片、角色图片及其他素材仍遵循各自的使用条款。
+[MIT](LICENSE) 适用于 skill 的指令和元数据。随包字体分别遵循[各自的 SIL OFL 1.1 许可证](skills/collage-design/references/fonts.md)，不适用 MIT。参考图片另有 [素材说明](skills/collage-design/references/visuals/NOTICE.md)，第三方照片、角色图片及其他素材仍遵循各自的使用条款。

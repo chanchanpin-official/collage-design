@@ -1,0 +1,61 @@
+{
+  "repository": "https://github.com/google/fonts",
+  "ref": "5bb28733cec313b63fbd415b574b5ae35c8aa8b8",
+  "retrieved_on": "2026-11-10",
+  "fonts": [
+    {
+      "family": "Noto Sans SC",
+      "file": "NotoSansSC-VF.woff2",
+      "license_file": "NotoSansSC-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "source_path": "ofl/notosanssc/NotoSansSC[wght].ttf",
+      "source_url": "https://github.com/google/fonts/blob/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "source_git_blob_sha": "fb0637bafbcd804fe32152370a1225990745b4bc",
+      "transformation": "Full TTF to WOFF2 using fontTools 4.60.2; no glyph subsetting; all variable axes retained.",
+      "glyph_count": 31036,
+      "unicode_mappings": 30890,
+      "axes": {
+        "wght": [
+          100,
+          900
+        ]
+      },
+      "bytes": 7782012,
+      "sha256": "2fa545bf4fd4ef228d6bdfe6a9715ed022f4f47e45eb33bd13a9a9cade326d3e",
+      "license_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "family": "Space Grotesk",
+      "file": "SpaceGrotesk-VF.ttf",
+      "license_file": "SpaceGrotesk-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "source_path": "ofl/spacegrotesk/SpaceGrotesk[wght].ttf",
+      "source_url": "https://github.com/google/fonts/blob/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/spacegrotesk/SpaceGrotesk%5Bwght%5D.ttf",
+      "source_git_blob_sha": "a1b2e6c26093066510a31147e7aec9abdc8d6c5e",
+      "transformation": "Unmodified official font bytes; filename simplified.",
+      "axes": {
+        "wght": [
+          300,
+          700
+        ]
+      },
+      "bytes": 136676,
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "license_sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "family": "Anton",
+      "file": "Anton-Regular.ttf",
+      "license_file": "Anton-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "source_path": "ofl/anton/Anton-Regular.ttf",
+      "source_url": "https://github.com/google/fonts/blob/5bb28733cec313b63fbd415b574b5ae35c8aa8b8/ofl/anton/Anton-Regular.ttf",
+      "source_git_blob_sha": "4d65707db9d8663ccfa99cd28cd3a4e0025be178",
+      "transformation": "Unmodified official font bytes.",
+      "weight": 400,
+      "bytes": 170812,
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+      "license_sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    }
+  ]
+}

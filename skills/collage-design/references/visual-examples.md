@@ -30,7 +30,7 @@
 | --- | --- | --- |
 | 初始输入 | [概念背景](visuals/poster/sources/concept-background.png)、[角色图片](visuals/poster/sources/character.png) | 区分生成概念图与既有角色素材 |
 | 独立前景 | [角色剪纸](visuals/poster/stages/character-cutout.png) | 主体轮廓、暖色与紫色环境的差异 |
-| 共享底图 | [组合底图](visuals/poster/stages/assembled-background.png) | 主体、纸张和文字空间的关系 |
+| 共享底图 | [组合底图](visuals/poster/stages/assembled-background.webp) | 主体、纸张和文字空间的关系 |
 | 输出 A | [脱敏海报 A](visuals/poster/final-a-redacted.png) | 大标题、两块正文纸片、页脚的阅读顺序 |
 | 输出 B | [脱敏海报 B](visuals/poster/final-b-redacted.png) | 相同底图与层次适配不同文案长度 |
 

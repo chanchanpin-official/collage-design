@@ -34,7 +34,7 @@ Images use neutral filenames and have been reduced for reference viewing, with i
 | PC | concept background | generated concept image | [View](poster/sources/concept-background.png) |
 | PS | character artwork | third-party artwork | [View](poster/sources/character.png) |
 | PF | prepared character cutout | prepared image | [View](poster/stages/character-cutout.png) |
-| PB | shared background | assembled image | [View](poster/stages/assembled-background.png) |
+| PB | shared background | assembled image | [View](poster/stages/assembled-background.webp) |
 | PD1 | redacted final poster A study | imagegen redaction derivative | [View](poster/final-a-redacted.png) |
 | PD2 | redacted final poster B study | imagegen redaction derivative | [View](poster/final-b-redacted.png) |
 

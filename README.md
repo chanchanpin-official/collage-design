@@ -34,7 +34,7 @@ npx skills add chanchanpin-official/collage-design --list
 - Host-provided web and image search for sourcing real photographs independently of either platform's asset library.
 - A way to prepare and upload image assets supported by the host and chosen connector. Image operations must follow the host's tool instructions.
 
-Installing this skill installs instructions only. It does not install connectors, sign in to an account, grant permissions, or provide paid platform access. Connector features and approval rules depend on the current tool schema.
+Installing this skill adds instructions, reference assets, and the bundled font files. It does not install connectors, sign in to an account, grant permissions, or provide paid platform access. Connector features and approval rules depend on the current tool schema.
 
 ## Required connection and account check
 
@@ -45,6 +45,28 @@ Unknown or mismatched accounts, failed authorization, and ambiguous target works
 **Computer Use is off by default.** Creation, editing, uploads, previews, exports, and saving use the official MCP. Connection or capability failures do not trigger browser or desktop automation. A UI-only exception requires the user's explicit request and is limited to that step; user-led manual editing remains available. MCP previews and local image viewing remain part of visual checks. Only the selected platform is checked, and valid results are reused within the session.
 
 See [connection and account verification](skills/collage-design/references/connector-preflight.md) for the execution rules.
+
+## Bundled default fonts and licenses
+
+This GitHub edition includes three default font families and their original **SIL Open Font License 1.1** files, with copyright notices:
+
+| Use | Font | Included font | License |
+| --- | --- | --- | --- |
+| Chinese headings and body | Noto Sans SC, weights 100–900 | [Full variable WOFF2](skills/collage-design/assets/fonts/NotoSansSC-VF.woff2) | [OFL](skills/collage-design/assets/fonts/NotoSansSC-OFL.txt) |
+| English labels and numbers | Space Grotesk, weights 300–700 | [Variable TTF](skills/collage-design/assets/fonts/SpaceGrotesk-VF.ttf) | [OFL](skills/collage-design/assets/fonts/SpaceGrotesk-OFL.txt) |
+| English display headings | Anton Regular | [TTF](skills/collage-design/assets/fonts/Anton-Regular.ttf) | [OFL](skills/collage-design/assets/fonts/Anton-OFL.txt) |
+
+These fonts may be used in commercial projects under their OFL terms. The license files are the official open licenses, not individual purchase certificates. User-specified fonts and approved masters take precedence over these defaults.
+
+Noto Sans SC uses WOFF2 to reduce package size while retaining the full character set and variable weights. HTML can load it through [fonts.css](skills/collage-design/assets/fonts/fonts.css). To prepare installable TTF copies, run the following from the repository root with `fonttools[woff]` available in your Python environment:
+
+```sh
+python3 skills/collage-design/scripts/prepare_fonts.py --output-dir /tmp/collage-design-fonts
+```
+
+This optional helper restores Noto Sans SC to TTF and copies the other TTFs and their licenses. It does not install dependencies or fonts. Bundling fonts does not make them available automatically in Canva or Figma; the agent checks the chosen platform's actual fonts before editing.
+
+See [font selection and usage](skills/collage-design/references/fonts.md) and [official sources, version pins, and checksums](skills/collage-design/assets/fonts/sources.json).
 
 ## Visual references
 
@@ -76,7 +98,7 @@ Canva uses available creation or import tools followed by editing. Figma uses up
 
 ## Privacy and task files
 
-The package contains reusable instructions and redacted visual references. Real project briefs, conversations, generation prompts, personal preferences, credentials, and private design links belong in private task records.
+The package contains reusable instructions, redacted visual references, and the documented font files and licenses. Real project briefs, conversations, generation prompts, personal preferences, credentials, and private design links belong in private task records.
 
 Store real task briefs, source lists, design identifiers, previews, exports, and handoff records in a separate private project directory. Do not save them back into this package. Use generic search terms instead of confidential wording, and do not publish private assets to make them importable.
 
@@ -88,9 +110,10 @@ Store real task briefs, source lists, design identifiers, previews, exports, and
 - [Canva workflow](skills/collage-design/references/canva.md)
 - [Figma workflow](skills/collage-design/references/figma.md)
 - [Assets and handoff](skills/collage-design/references/assets-and-handoff.md)
+- [Default fonts and licenses](skills/collage-design/references/fonts.md)
 - [Visual examples and material relationships](skills/collage-design/references/visual-examples.md)
 - [Real images, monochrome/color, and foreground selection](skills/collage-design/references/composition-decisions.md)
 
 ## License
 
-[MIT](LICENSE). The license covers this skill's instructions and metadata. Included reference visuals have a separate [notice](skills/collage-design/references/visuals/NOTICE.md); third-party photographs and artwork remain subject to their own terms. Images or other assets selected during a task also retain their own terms.
+[MIT](LICENSE). The license covers this skill's instructions and metadata. Bundled fonts are governed by their respective [SIL OFL 1.1 licenses](skills/collage-design/references/fonts.md), not MIT. Included reference visuals have a separate [notice](skills/collage-design/references/visuals/NOTICE.md); third-party photographs and artwork remain subject to their own terms. Images or other assets selected during a task also retain their own terms.

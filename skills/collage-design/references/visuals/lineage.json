@@ -179,7 +179,7 @@
     },
     {
       "id": "PB",
-      "file": "poster/stages/assembled-background.png",
+      "file": "poster/stages/assembled-background.webp",
       "role": "shared background",
       "kind": "assembled image"
     },
